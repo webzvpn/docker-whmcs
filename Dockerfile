@@ -21,4 +21,10 @@ EXPOSE 80
 
 VOLUME /var/log
 
+ADD crontab /etc/cron.d/whmcs
+ 
+RUN chmod 0644 /etc/cron.d/whmcs
+ 
+RUN touch /var/log/cron.log
+
 CMD ["/sbin/start.sh"]
