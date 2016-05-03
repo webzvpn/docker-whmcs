@@ -1,0 +1,2 @@
+0 0 * * * root php -q /var/www/public/crons/cron.php
+# An empty line is required at the end of this file for a valid cron file.
